@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/nearbyPerson"
+    android:clickable="true"
+    android:layout_centerHorizontal="true"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileImage"
+        android:background="@drawable/littlesquare"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/nearby_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mini texts"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/chatRequest"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/placeholderbutton"
+        android:clickable="true"
+        />
+</LinearLayout><!-- From: file:/C:/Users/Austin/Desktop/CS%20class%20stuff/AndroidServiceClientSample/travelrun2/app/src/main/res/layout/custom_layout_main.xml -->

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "520246718928",
+    "firebase_url": "https://travel-run.firebaseio.com",
+    "project_id": "travel-run",
+    "storage_bucket": "travel-run.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520246718928:android:afb672f50728e964",
+        "android_client_info": {
+          "package_name": "com.nowrunning.travelrun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520246718928-gisj8pnq5mb1odptqkubfjb1gu38ao4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nowrunning.travelrun",
+            "certificate_hash": "a30f0ff05ca630bb9df838fce5f97178fdb1d039"
+          }
+        },
+        {
+          "client_id": "520246718928-pdfcprvmr9phhbj9j0rgi7h5bsaijoup.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "520246718928-pdfcprvmr9phhbj9j0rgi7h5bsaijoup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1QFcE_huc62m4XHBAjXa6KBZzsg6m5U8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520246718928-pdfcprvmr9phhbj9j0rgi7h5bsaijoup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
