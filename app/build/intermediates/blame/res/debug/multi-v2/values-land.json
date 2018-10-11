@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chrisjereza/Desktop/projects/travelrun9.4.18.zip (Unzipped Files)/travelrun2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/chrisjereza/Desktop/projects/TravelApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/chrisjereza/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/af0c62eda9fb8c46deed6c8c747b92d7/res/values-land/values-land.xml",
+                    "source": "/Users/chrisjereza/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2b7ce8272e747d6cf8a0967b357ba58f/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/chrisjereza/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/d6fe554133e899c6e3324cc4625ec84e/res/values-land/values-land.xml",
+                    "source": "/Users/chrisjereza/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/3c6c1f8b80487bc5a01a9f3dc62d1231/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

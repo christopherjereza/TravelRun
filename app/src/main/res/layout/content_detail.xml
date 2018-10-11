@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="320dip"
+    android:layout_marginBottom="0dip"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:id="@+id/pager_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true" android:visibility="visible"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                tools:listitem="@layout/pager_item" />
+
+            <RelativeLayout
+                android:id="@+id/viewPagerIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal" />
+
+                <ImageButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="42dip"
+                    android:layout_height="42dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dip"
+                    android:visibility="gone"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_finish"
+                    android:layout_width="42dip"
+                    android:layout_height="42dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dip"
+                    android:contentDescription="Let's start"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv_close1"
+                android:visibility="visible"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dip"
+                android:layout_marginLeft="0dip"
+                android:contentDescription="TODO"
+                android:src="@drawable/iv_x" />
+
+            <ImageView
+                android:id="@+id/iv_circles1"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="10dip"
+                android:contentDescription="TODO"
+                android:src="@drawable/iv_circles" />
+        </RelativeLayout>
+  </FrameLayout>
+</android.support.constraint.ConstraintLayout>

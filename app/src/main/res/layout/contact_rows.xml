@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorCyan3"
+    android:id="@+id/nearbyPerson"
+    android:layout_marginTop="0dip"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dip"
+            android:layout_marginBottom="0dip"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_prof"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        tools:src="@drawable/test_small"
+                        android:layout_centerVertical="true"
+                        android:layout_width="55dip"
+                        android:layout_height="55dip"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_name"
+                    android:layout_toRightOf="@+id/rl_image_prof"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="true"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:text="Mathew" />
+
+
+                    <CheckBox
+                        android:id="@+id/brand_select"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="1dip"
+                        android:button="@null"
+                        android:background="@drawable/check_selector"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

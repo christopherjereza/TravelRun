@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginBottom="0dip"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main1"
+        android:layout_marginTop="0dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/contact_bar" />
+
+
+
+        <ProgressBar
+            android:id="@+id/pg_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            />
+
+        <EditText android:id="@+id/searchEditText"
+            android:layout_below="@+id/rl_main_"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dip"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:drawableLeft="@drawable/ic_search_icon"
+            android:drawablePadding="10dip"
+            android:hint="@string/search_hint"
+            android:textColorHint="@color/colorHintSearch"
+            android:textSize="16sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+
+
+        <View android:id="@+id/separator"
+            android:layout_below="@+id/searchEditText"
+            android:layout_marginTop="10dip"
+            android:background="@color/colorHintSearch"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_centerVertical ="true"
+            />
+
+      <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:visibility="visible"
+            android:layout_below="@+id/separator"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="0dip"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:id="@+id/bt_create"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/bg_rounded"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:text="@string/label_create"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

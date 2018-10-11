@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginBottom="0dip"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dip"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_main1"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="0dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ProgressBar
+            android:id="@+id/pg_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:visibility="gone"
+            android:layout_marginTop="0dip"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_marginTop="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <include layout="@layout/content_detail_your_profile" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_below="@+id/rl_1"
+                android:layout_marginTop="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <include layout="@layout/content_viewpager_your_p" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+  </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

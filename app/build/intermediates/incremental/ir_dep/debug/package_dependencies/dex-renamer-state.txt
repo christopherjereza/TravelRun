@@ -1,4 +1,4 @@
-#Thu Oct 04 18:09:56 PDT 2018
-base.0=/Users/chrisjereza/Desktop/projects/travelrun9.4.18.zip (Unzipped Files)/travelrun2/app/build/intermediates/transforms/dexMerger/debug/62
+#Tue Oct 09 18:56:22 PDT 2018
+base.0=/Users/chrisjereza/Desktop/projects/TravelApp/app/build/intermediates/transforms/dexMerger/debug/10
 path.0=classes.dex
 renamed.0=classes.dex

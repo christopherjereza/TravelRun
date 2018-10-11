@@ -1,0 +1,74 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:layout_margin="0dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="false">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_marginTop="0dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:visibility="visible"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/colorCyan"
+            android:layout_marginEnd="-10dp"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/rl_center"
+            android:layout_marginTop="0dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="20dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginStart="10dip"
+                android:layout_marginTop="1dip"
+                android:fontFamily="arial"
+                android:layout_alignParentEnd="true"
+                android:text="@string/label_my_circle"
+                android:textColor="@color/colorCyan"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:text="@string/label_my_circle" />
+
+
+       </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_main_screen1"
+    android:layout_marginTop="5dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    >
+
+    <RelativeLayout
+        android:id="@+id/iv_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="0dip"
+        >
+
+        <TextView
+            android:id="@+id/tv_title_1"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:text="Perro"
+            android:layout_marginLeft="0dip"
+            android:layout_marginStart="0dip" />
+
+         <ImageView
+            android:id="@+id/iv_favorite"
+             android:visibility="visible"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/iv_fields2"
+        android:layout_below="@+id/iv_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="0dip"
+
+        android:layout_marginBottom="10dip"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:text="1"
+            tools:text="Es mi perrito que mueve la cola"
+            android:layout_marginEnd="15dip"
+             />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

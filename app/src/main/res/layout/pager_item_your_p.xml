@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        tools:src="@drawable/test"
+        android:id="@+id/img_pager_item"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:clickable="false"/>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="28dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/iv_settings" />
+
+    <ImageView
+        android:id="@+id/iv_circles"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_width="17dip"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="10dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_next" />
+</RelativeLayout>
